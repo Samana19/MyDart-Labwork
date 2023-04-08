@@ -8,5 +8,11 @@ void main() {
     'country': 'Nepal'
   };
   map['country'] = 'India';
-  print(map);
+  printMap(map);
+}
+
+void printMap(Map<String, dynamic> map) {
+  map.forEach((key, value) {
+    print('$key: $value');
+  });
 }

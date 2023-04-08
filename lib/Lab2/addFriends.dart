@@ -2,6 +2,9 @@
 
 void main(List<String> args) {
   var friends = ['Sam', 'Samana', 'Amantha', 'Samanthi', 'Samanthini'];
-  var nameswithA = friends.where((friend) => friend.startsWith('A'));
-  print(nameswithA);
+  print(findA(friends));
+}
+
+String findA(List<String> friends) {
+  return friends.where((friend) => friend.startsWith('A')).toString();
 }

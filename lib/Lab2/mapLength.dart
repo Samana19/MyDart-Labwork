@@ -7,6 +7,9 @@ void main() {
     'age': 20,
     'country': 'Nepal'
   };
-  var mapLength = names.keys.where((key) => key.length == 4);
-  print(mapLength);
+  print(lengthMap(names));
+}
+
+int lengthMap(Map<String, dynamic> map) {
+  return map.keys.where((key) => key.length == 4).length;
 }
